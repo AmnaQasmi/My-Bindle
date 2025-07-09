@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBindle</title>
+    <meta name="description"
+        content="A place where friendships grow, communities thrive, and moments turn into unforgettable experiences. Join MyBindle today!">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Hero Section (Landing Page) -->
+    <section class="hero-section"
+        style="background: #FF5349; padding: 0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; position: relative; overflow: visible; padding-bottom: 2rem;">
+        <div style="width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 0rem;">
+            <img src="images/logo.png" alt="Mybindle Logo" style="height: 110px;">
+        </div>
+        <div class="hero-flex"
+            style="display: flex; flex-wrap: nowrap; align-items: stretch; justify-content: flex-start; width: 100%; max-width: 1400px; margin: 0 auto; position: relative; min-height: 600px; gap: 2rem;">
+            <div class="hero-content"
+                style="flex: 1 1 700px; min-width: 320px; color: #fff; display: flex; flex-direction: column; justify-content: center; max-width: 700px; z-index: 20; padding: 60px 0 60px 60px;">
+                <h1
+                    style="font-size: 4.5rem; font-weight: 700; font-family: 'Inter', sans-serif; line-height: 1.1; color: #ffff; text-align: left; letter-spacing: -2px; margin-right: auto;">
+                    <span style="display:block;">Stay Connected</span>
+                    <span style="display:block;">Stay Social</span>
+                    <span style="display:block;">Stay You!</span>
+                </h1>
+                <p
+                    style="font-family: sans-serif; font-size: 18px; font:bolder; color: #fff; max-width: 520px; text-align: left; line-height: 1.5; font-weight: 400; margin-right: auto;">
+                    A place where friendships grow, communities thrive, and moments turn into unforgettable experiences.
+                    Whether you're looking to reconnect with old friends, build new relationships, or share what matters
+                    most to you – MyBindle is your home on the internet.</p>
+                <button class="btn-secondary"
+                    style="background: #ffffff; color: #FF5349; border-radius: 8px; font-weight: 700; padding: 1.1rem 2.8rem; font-size: 1.25rem; align-self: flex-start; transition: box-shadow 0.1s; border: none; cursor: pointer; ">Get
+                    Started</button>
+            </div>
+            <div class=""
+                style="flex: 1 1 700px; min-width: 320px; display: flex; align-items: flex-start; justify-content: flex-end; position: relative; min-height: 700px; overflow: hidden;">
+                <img src="images/Phone.png" class="phone-animate hero-phone-hide-mobile" alt="MyBindle App Screenshot"
+                    style="position: absolute; right: 0; top: -60px; bottom: -60px; width: 480px; max-width: 520px; height: calc(100% + 140px); z-index: 10; object-fit: contain; margin-right: 55px; object-position: center;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features" style="background: #F2F2F2; padding: 60px 0 60px 0;">
+        <hr class="features-divider">
+        <div class="container" style="max-width: 1300px; margin: auto;">
+            <div class="section-header" style="text-align: center; margin-bottom: 2.5rem;">
+                <h2 class="section-title"
+                    style="font-family: 'Inter', sans-serif; font-size: 3.2rem; font-weight: 800; color: #222; margin-bottom: 0.5rem;">
+                    Features That Keep You Hooked!</h2>
+                <p class="section-subtitle"
+                    style="font-size: 1.25rem; color: #444; font-weight: 500; margin-bottom: 2.5rem;">Meet, Chat, Share
+                    – Anytime, Anywhere!</p>
+            </div>
+            <div class="features-grid" style="padding-left: 48px; padding-right: 48px;">
+                <!-- Card 1: Seamless Connections -->
+                <div class="feature-card"
+                    style="background: #F2F2F2; border-radius: 20px; box-shadow: 0 6px 24px rgba(0,0,0,0.08); text-align: center; align-items: center; min-height: 150px;">
+                    <div style="padding-top: 5px; font-family: 'Inter', sans-serif; font-size: 1.35rem; font-weight: 700; color: #232d3b;">🔥 Seamless Connections</div>
+                    <div style="font-size: 1rem; color: #222; line-height: 1.5; font-family: 'Inter', sans-serif; font-weight: 500;">Stay in touch with friends,<br>family, and like-minded people<br>with just a tap.</div>
+                </div>
+                <!-- Card 2: Share Your Story -->
+                <div class="feature-card"
+                    style="background: #F2F2F2; border-radius: 20px; box-shadow: 0 6px 24px rgba(0,0,0,0.08); text-align: center; align-items: center; min-height: 150px;">
+                    <div style="padding-top: 5px; font-family: 'Inter', sans-serif; font-size: 1.35rem; font-weight: 700; color: #232d3b;">📸 Share Your Story</div>
+                    <div style="font-size: 1rem; color: #222; line-height: 1.5; font-family: 'Inter', sans-serif; font-weight: 500;">Upload photos, videos, and updates to<br>let the world know what's happening in<br>your life.</div>
+                </div>
+                <!-- Card 3: Real-Time Chat -->
+                <div class="feature-card"
+                    style="background: #F2F2F2; border-radius: 20px; box-shadow: 0 6px 24px rgba(0,0,0,0.08); text-align: center; align-items: center; min-height: 150px;">
+                    <div style="padding-top: 5px; font-family: 'Inter', sans-serif; font-size: 1.35rem; font-weight: 700; color: #232d3b;">💬 Real-Time Chat</div>
+                    <div style="font-size: 1rem; color: #222; line-height: 1.5; font-family: 'Inter', sans-serif; font-weight: 500;">Whether it's a DM or a group<br>conversation, connect instantly with<br>smooth, lightning-fast messaging.</div>
+                </div>
+                <!-- Card 4: Privacy First -->
+                <div class="feature-card"
+                    style="background: #F2F2F2; border-radius: 20px; box-shadow: 0 6px 24px rgba(0,0,0,0.08); text-align: center; align-items: center; min-height: 150px;">
+                    <div style="padding-top: 5px; font-family: 'Inter', sans-serif; font-size: 1.35rem; font-weight: 700; color: #232d3b;">🔒 Privacy First</div>
+                    <div style="font-size: 1rem; color: #222; line-height: 1.5; font-family: 'Inter', sans-serif; font-weight: 500;">Your data, your control. We prioritize your privacy with world-class security.</div>
+                </div>
+                <!-- Card 5: Discover & Explore -->
+                <div class="feature-card"
+                    style="background: #F2F2F2; border-radius: 20px; box-shadow: 0 6px 24px rgba(0,0,0,0.08); text-align: center; align-items: center; min-height: 150px;">
+                    <div style="padding-top: 5px; font-family: 'Inter', sans-serif; font-size: 1.35rem; font-weight: 700; color: #232d3b;">🌎 Discover & Explore</div>
+                    <div style="font-size: 1rem; color: #222; line-height: 1.5; font-family: 'Inter', sans-serif; font-weight: 500;">Find trending content, join communities, and follow pages that match your interests.</div>
+                </div>
+                <!-- Card 6: Grow Your Business -->
+                <div class="feature-card"
+                    style="background: #F2F2F2; border-radius: 20px; box-shadow: 0 6px 24px rgba(0,0,0,0.08); text-align: center; align-items: center; min-height: 150px;">
+                    <div style="padding-top: 5px; font-family: 'Inter', sans-serif; font-size: 1.35rem; font-weight: 700; color: #232d3b;">💼 Grow Your Business</div>
+                    <div style="font-size: 1rem; color: #222; line-height: 1.5; font-family: 'Inter', sans-serif; font-weight: 500;">Use our platform to market your brand, connect with customers, and build meaningful relationships.</div>
+                </div>
+            </div>
+            <hr class="features-divider">
+            <style>
+                @media (max-width: 1100px) {
+                    .features-grid {
+                        grid-template-columns: repeat(2, 1fr) !important;
+                    }
+                }
+
+                @media (max-width: 700px) {
+                    .features-grid {
+                        grid-template-columns: 1fr !important;
+                    }
+
+                    .feature-card {
+                        min-width: 0 !important;
+                        max-width: 100% !important;
+                    }
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- Where Every Click Sparks a Connection section -->
+    <section class="connection-section"
+        style="background: #F2F2F2; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; ">
+        <div style="flex: 1 1 380px; min-width: 280px; display: flex; align-items: center; justify-content: center;">
+            <img class="real-phone-mockup" src="images/phone-pair.png" alt="MyBindle App Screenshot"
+                style="max-width: 380px; width: 100%; border-radius: 32px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); display: block; margin: 0 auto;">
+        </div>
+        <div style="flex: 1 1 380px; min-width: 180px;">
+            <h2 class="section-title" style="font-family: Inter, sans-serif; font-size: 3rem; font-weight: 400; ">Where Every Click <br> Sparks a Connection!</h2>
+            <p class="section-description" style="width:85%; font-size: 1rem; color: #444; ">A small act of
+                kindness today can create a lifetime of impact for someone in need. Give from the heart and change a
+                life!</p>
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-right: 32px;">
+                <div style="background: #F2F2F2; border-radius: 14px; box-shadow: 4px 8px 18px 0 rgba(0,0,0,0.10); padding: 0.85rem 1.1rem; display: flex; align-items: flex-start; gap: 0.8rem;">
+                    <span style="font-size: 1.4rem; margin-top: 2px;">🎬</span>
+                    <div>
+                        <div style="font-weight: 800; color: #232d3b; font-size: 1.08rem; font-family: 'Inter',sans-serif;">Short Videos & Reels</div>
+                        <div style="color: #444; font-size: 0.92rem; margin-top: 0.18rem; font-family: 'Inter',sans-serif; font-weight: 500;">Share engaging, bite-sized content that keeps everyone entertained.</div>
+                    </div>
+                </div>
+                <div style="background: #F2F2F2; border-radius: 14px; box-shadow: 4px 8px 18px 0 rgba(0,0,0,0.10); padding: 0.85rem 1.1rem; display: flex; align-items: flex-start; gap: 0.8rem;">
+                    <span style="font-size: 1.4rem; margin-top: 2px;">🔔</span>
+                    <div>
+                        <div style="font-weight: 800; color: #232d3b; font-size: 1.08rem; font-family: 'Inter',sans-serif;">Smart Notifications</div>
+                        <div style="color: #444; font-size: 0.92rem; margin-top: 0.18rem; font-family: 'Inter',sans-serif; font-weight: 500;">Stay updated on what matters without the noise.</div>
+                    </div>
+                </div>
+                <div style="background: #F2F2F2; border-radius: 14px; box-shadow: 4px 8px 18px 0 rgba(0,0,0,0.10); padding: 0.85rem 1.1rem; display: flex; align-items: flex-start; gap: 0.8rem;">
+                    <span style="font-size: 1.4rem; margin-top: 2px;">👥</span>
+                    <div>
+                        <div style="font-weight: 800; color: #232d3b; font-size: 1.08rem; font-family: 'Inter',sans-serif;">Interest-Based Communities</div>
+                        <div style="color: #444; font-size: 0.92rem; margin-top: 0.18rem; font-family: 'Inter',sans-serif; font-weight: 500;">Join groups and discussions that match your passion.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            @media (max-width: 900px) {
+            .connection-section {
+          flex-direction: column !important;
+          align-items: center !important;
+          gap: 2.5rem !important;
+        }
+        .connection-section > div {
+          min-width: 0 !important;
+          width: 100% !important;
+          justify-content: center !important;
+        }
+        .connection-section img.real-phone-mockup {
+          margin-bottom: 1.5rem !important;
+          margin-right: 0 !important;
+        }
+        .connection-section .section-title,
+        .connection-section .section-description {
+          text-align: center !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .connection-section [style*='flex-direction: column'] {
+            margin-right: 0 !important;
+            align-items: center !important;
+        }
+    }
+    @media (max-width: 600px) {
+        .connection-section {
+            padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        .connection-section .section-title {
+          font-size: 1.5rem !important;
+        }
+        .connection-section .section-description {
+            font-size: 0.92rem !important;
+        }
+        .connection-section [style*='padding: 0.85rem 1.1rem'] {
+            padding: 0.5rem 0.5rem !important;
+        }
+    }
+    </style>
+    <hr class="features-divider">
+    </section>
+
+    <!-- Installation Guide -->
+    <section class="installation">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How to Install Our App</h2>
+                <p class="section-subtitle">Getting started is quick and easy! Follow these simple steps to install and
+                    start using MyBindle today.</p>
+            </div>
+            <div class="installation-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Download</h3>
+                    <p class="step-description">Open Play Store or App Store</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Install App</h3>
+                    <p class="step-description">The app will install automatically.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Ready to Use</h3>
+                    <p class="step-description">Sign up or log in to start exploring!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation CTA Section (before testimonials) -->
+    <section class="donation-cta" style="background: #FF5349; border-radius: 28px;  margin: 35px 35Px; height: 525px; color: white; position: relative;">
+      <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; ">
+        <div style="margin-bottom: 135px; margin-left: 5%; flex: 1 1 520px; min-width: 280px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; max-width: 700px;">
+          <h2 style="font-size:3.5rem; font-weight: 800; font-family: 'Inter', sans-serif; line-height: 1.05; margin-bottom: 1rem; letter-spacing: -2px; color: #fff;">Be the Reason<br>Someone Smiles Today!</h2>
+          <p style="font-size: 1.25rem; font-family: 'Inter', sans-serif; font-weight: 500; margin-bottom: 1.2rem; max-width: 520px; line-height: 1.3; color: #fff;">Your generosity can change lives every donation brings hope, support, and a brighter future. Give today and make a difference!</p>
+                <button class="btn-secondary"
+                    style="margin-bottom: 50px; background: #ffffff; color: #FF5349; border-radius: 8px; font-weight: 700; padding: 1.1rem 2.8rem; font-size: 1.25rem; align-self: flex-start; transition: box-shadow 0.1s; border: none; cursor: pointer; ">Donate Now</button>
+            </div>
+        <div style="flex: 1 1 520px; min-width: 280px; display: flex; justify-content: center; align-items: flex-end; position: relative;">
+          <div style="width: 100%; max-width: 580px; min-height: 600px; display: flex; align-items: center; justify-content: center;">
+                <img src="images/Phonee.png" class="phone-animate" alt="MyBindle App Screenshot"
+                    style="position: absolute; width: 480px; max-width: 520px; height: calc(100% + 160px); z-index: 10; margin-top: 111px; object-fit: contain; margin-right: 45px; ">
+                    </div>
+                </div>
+            </div>
+      <style>
+        @media (max-width: 1100px) {
+          .donation-cta .container {
+            flex-direction: column !important;
+            align-items: center !important;
+            gap: 2.5rem !important;
+          }
+          .donation-cta > .container > div {
+            max-width: 100% !important;
+            align-items: center !important;
+            text-align: center !important;
+          }
+          .donation-cta h2, .donation-cta p {
+            text-align: center !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+          }
+          .donation-cta .btn-secondary {
+            align-self: center !important;
+          }
+        }
+        @media (max-width: 700px) {
+          .donation-cta {
+            padding: 32px 0 !important;
+            border-radius: 16px !important;
+          }
+          .donation-cta h2 {
+            font-size: 2.1rem !important;
+          }
+          .donation-cta p {
+            font-size: 1rem !important;
+          }
+          .donation-cta .btn-secondary {
+            font-size: 1rem !important;
+            padding: 0.8rem 1.5rem !important;
+            align-self: center !important;
+          }
+          .donation-cta [style*='min-height: 600px'] {
+            min-height: 320px !important;
+            padding: 12px 8px 0 8px !important;
+            border-radius: 20px !important;
+          }
+          .donation-cta img {
+            max-width: 220px !important;
+            border-radius: 18px !important;
+          }
+        }
+        .donation-cta .btn-secondary:hover {
+          background: #FF5349 !important;
+          color: #fff !important;
+          box-shadow: 0 4px 18px rgba(255,83,73,0.15) !important;
+        }
+      </style>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Users Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">This platform changed the way I stay in touch with my friends and
+                        family. The interface is smooth, and I love how easy it is to share my moments!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"
+                            style="background-image: url('https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=48&h=48&dpr=1'); background-size: cover;">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Emily R</div>
+                            <div class="author-location">USA</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">Finally, a social network that understands what I need! The privacy
+                        features are a game-changer, and I feel safer sharing my life online.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"
+                            style="background-image: url('https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=48&h=48&dpr=1'); background-size: cover;">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Amit K</div>
+                            <div class="author-location">India</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">I joined just to explore, but now I can't imagine my day without it. The
+                        real-time chat and engaging communities make every interaction special!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"
+                            style="background-image: url('https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=48&h=48&dpr=1'); background-size: cover;">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Sophie M</div>
+                            <div class="author-location">UK</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">Running my small business has never been easier! This platform helped me
+                        connect with customers, promote my products, and grow my brand.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"
+                            style="background-image: url('https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=48&h=48&dpr=1'); background-size: cover;">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Javier L</div>
+                            <div class="author-location">Spain</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">The perfect blend of fun and functionality! Whether I want to go live,
+                        discover trending content, or just catch up with friends, everything is right here!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"
+                            style="background-image: url('https://images.pexels.com/photos/1707828/pexels-photo-1707828.jpeg?auto=compress&cs=tinysrgb&w=48&h=48&dpr=1'); background-size: cover;">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Lucas T</div>
+                            <div class="author-location">Brazil</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">I've tried many social platforms, but this one truly stands out! The
+                        experience feels personal, the connections feel real, and every feature just makes sense.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"
+                            style="background-image: url('https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=48&h=48&dpr=1'); background-size: cover;">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Nora S</div>
+                            <div class="author-location">Canada</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see-more">
+                <button class="btn-text">See More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="donation-cta" style="background: #FF5349; border-radius: 28px;  margin: 35px 35Px; height: 525px; color: white; position: relative;">
+        <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; ">
+          <div style="margin-bottom: 135px; margin-left: 5%; flex: 1 1 520px; min-width: 280px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; max-width: 700px;">
+            <h2 style="font-size:3.5rem; font-weight: 800; font-family: 'Inter', sans-serif; line-height: 1.05; margin-bottom: 1rem; letter-spacing: -2px; color: #fff;">Join the fun - Download<br>MyBindle Now!</h2>
+            <p style="font-size: 1.25rem; font-family: 'Inter', sans-serif; font-weight: 500; margin-bottom: 1.2rem; max-width: 520px; line-height: 1.3; color: #fff;">Your Social Network, Your Way Download My Bindle Now and Be a part of a Community Thats Always Evolving!</p>
+                  <button class="btn-secondary"
+                      style="background: #ffffff; color: #FF5349; border-radius: 8px; font-weight: 700; padding: 1.1rem 2.8rem; font-size: 1.25rem; align-self: flex-start; transition: box-shadow 0.1s; border: none; cursor: pointer; margin-bottom: 10px;">Download Now</button>
+              </div>
+          <div style="flex: 1 1 520px; min-width: 280px; display: flex; justify-content: center; align-items: flex-end; position: relative;">
+            <div style="width: 100%; max-width: 580px; min-height: 600px; display: flex; align-items: center; justify-content: center;">
+                  <img src="images/Phonee.png" class="phone-animate" alt="MyBindle App Screenshot"
+                      style="position: absolute; width: 480px; max-width: 520px; height: calc(100% + 160px); z-index: 10; margin-top: 111px; object-fit: contain; margin-right: 45px; ">
+                      </div>
+                  </div>
+              </div>
+        <style>
+          @media (max-width: 1100px) {
+            .donation-cta .container {
+              flex-direction: column !important;
+              align-items: center !important;
+              gap: 2.5rem !important;
+            }
+            .donation-cta > .container > div {
+              max-width: 100% !important;
+              align-items: center !important;
+              text-align: center !important;
+            }
+            .donation-cta h2, .donation-cta p {
+              text-align: center !important;
+              margin-left: auto !important;
+              margin-right: auto !important;
+            }
+            .donation-cta .btn-secondary {
+              align-self: center !important;
+            }
+          }
+          @media (max-width: 700px) {
+            .donation-cta {
+              padding: 32px 0 !important;
+              border-radius: 16px !important;
+            }
+            .donation-cta h2 {
+              font-size: 2.1rem !important;
+            }
+            .donation-cta p {
+              font-size: 1rem !important;
+            }
+            .donation-cta .btn-secondary {
+              font-size: 1rem !important;
+              padding: 0.8rem 1.5rem !important;
+              align-self: center !important;
+            }
+            .donation-cta [style*='min-height: 600px'] {
+              min-height: 320px !important;
+              padding: 12px 8px 0 8px !important;
+              border-radius: 20px !important;
+            }
+            .donation-cta img {
+              max-width: 220px !important;
+              border-radius: 18px !important;
+            }
+          }
+          .donation-cta .btn-secondary:hover {
+            background: #FF5349 !important;
+            color: #fff !important;
+            box-shadow: 0 4px 18px rgba(255,83,73,0.15) !important;
+          }
+        </style>
+      </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Mybindle Logo"
+                            style="height: 32px; margin-right: auto;  border-radius: 5px; vertical-align: middle;">
+                    </div>
+                    <p class="footer-description">Your home for meaningful connections and authentic social experiences.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Product</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Features</a></li>
+                            <li><a href="#" class="footer-link">Security</a></li>
+                            <li><a href="#" class="footer-link">Business</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">About</a></li>
+                            <li><a href="#" class="footer-link">Blog</a></li>
+                            <li><a href="#" class="footer-link">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Help Center</a></li>
+                            <li><a href="#" class="footer-link">Contact</a></li>
+                            <li><a href="#" class="footer-link">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MyBindle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
